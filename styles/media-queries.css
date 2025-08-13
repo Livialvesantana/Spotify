@@ -1,0 +1,73 @@
+/* ====== TABLET (largura até 1024px) ====== */
+@media screen and (max-width: 1024px) {
+    .offer__list {
+        display: grid;
+      grid-template-columns: repeat(5, 1fr); /*padrão */
+      gap: 24px;
+    }
+  
+    .cards img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .header__search {
+      width: 250px;
+    }
+  
+    .sidebar {
+      width: 220px;
+    }
+  }
+  
+  /* ====== CELULAR (largura até 600px) ====== */
+  @media screen and (max-width: 600px) {
+    .offer__list {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  
+    .playlist-container h1,
+    .playlist-container h2 {
+      font-size: 20px;
+      padding: 0 16px;
+    }
+  
+    .sidebar {
+      display: none; /* Esconde o menu lateral no celular */
+    }
+  
+    .header__navigation {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .header__search {
+      display: none; /* Esconde a busca no mobile */
+    }
+  
+    .header__login button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  
+    .section-playlist__content {
+      text-align: center;
+    }
+  
+    .languages__button {
+      font-size: 12px;
+    }
+  
+    .disclaimer-premium {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .disclaimer-premium button {
+      margin-top: 12px;
+    }
+  }
+  
+  
